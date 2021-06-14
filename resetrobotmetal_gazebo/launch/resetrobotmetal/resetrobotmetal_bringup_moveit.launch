@@ -1,0 +1,15 @@
+<launch>
+  
+    <!-- Launch Gazebo  -->
+    <include file="$(find resetrobotmetal_gazebo)/launch/resetrobotmetal/resetrobotmetal_gazebo_world.launch" />
+
+    <!-- ros_control arm launch file -->
+    <include file="$(find resetrobotmetal_gazebo)/launch/resetrobotmetal/resetrobotmetal_gazebo_states.launch" />   
+
+    <!-- ros_control trajectory control dof arm launch file -->
+    <include file="$(find resetrobotmetal_gazebo)/launch/resetrobotmetal/resetrobotmetal_trajectory_controller.launch" />
+
+    <!-- moveit launch file -->
+    <include file="$(find resetrobotmetal_moveit_config)/launch/moveit_planning_execution.launch" />
+
+</launch>
