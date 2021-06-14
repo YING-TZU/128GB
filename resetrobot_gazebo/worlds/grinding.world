@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://grinding</uri>
+      <pose>0.8 0.565 0 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+  </world>
+</sdf>
